@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16777216"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="91d68" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -13,14 +15,20 @@
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="3abf5" class="javax.swing.JComboBox" binding="heroPicker">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="3" indent="1" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-16777216"/>
+              <font name="PragmataPro Mono" size="24"/>
+              <foreground color="-14369872"/>
+            </properties>
           </component>
           <vspacer id="4c1e">
             <constraints>
@@ -33,7 +41,14 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-16777216"/>
+              <font name="PragmataPro Mono" size="24"/>
+              <foreground color="-1"/>
+              <selectionBackground color="-14540254"/>
+              <selectionForeground color="-14304416"/>
+              <selectionMode value="0"/>
+            </properties>
           </component>
         </children>
       </grid>
@@ -42,7 +57,9 @@
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="eb4a0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -50,7 +67,9 @@
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-16777216"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="6e3f6" class="javax.swing.JLabel" binding="topTalentLabel">
@@ -70,7 +89,9 @@
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-16777216"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="5020f" class="javax.swing.JLabel" binding="middleTalentLabel">
@@ -90,7 +111,9 @@
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-16777216"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="4004b" class="javax.swing.JLabel" binding="bottomTalentLabel">
