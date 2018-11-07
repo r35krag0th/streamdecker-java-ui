@@ -8,10 +8,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MainFrame extends JFrame {
     private static final int WIDTH = 500;
@@ -24,11 +21,16 @@ public class MainFrame extends JFrame {
     private JLabel middleTalentLabel;
     private JLabel bottomTalentLabel;
 
+    private DefaultListModel buildPickerModel;
+
     public MainFrame() {
         setSize(WIDTH, HEIGHT);
         setContentPane(mainPanel);
         setLocationRelativeTo(null);
 
+        buildPickerModel = new DefaultListModel();
+
+        buildPicker.setModel(buildPickerModel);
     }
 
     public JComboBox getHeroPicker() {
@@ -63,12 +65,27 @@ public class MainFrame extends JFrame {
     }
 
     public void resetBuildPickerOptions() {
-        buildPicker.removeAll();
+        System.out.println("*** Resetting BuildPicker Options");
+//        DefaultListModel listModel = (DefaultListModel) buildPicker.getModel();
+//        buildPickerModel.removeAllElements();
+//        buildPicker.setModel(new DefaultListModel());
+//        buildPicker.getModel().clear();
+    }
+
+    public void resetCurrentBuildLines() {
+        topTalentLabel.setText("");
+        middleTalentLabel.setText("");
+        bottomTalentLabel.setText("");
     }
 
     public void setBuildsPickerOptions(Set<String> buildNames) {
         resetBuildPickerOptions();
         buildPicker.setListData(buildNames.toArray());
+//        buildPickerModel.a
+//        buildPickerModel.addAll(Collections.unmodifiableSet(buildNames));
+//        for (String name : buildNames) {
+//            buildPickerModel.addElement(name);
+//        }
     }
 
     public void setBuildLineLabels(HeroBuild build) {

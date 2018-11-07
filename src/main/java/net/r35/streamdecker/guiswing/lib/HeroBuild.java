@@ -19,14 +19,14 @@ public class HeroBuild {
     public String selfLink;
 
     public String getTopLineString() {
-        return String.format("[ %s ][ %s ][ %s ]", levelOnePick, levelThreePick, levelSevenPick);
+        return String.format("<html><font color=#ff0000>[ %s ]</font><font color=#00ff00>[ %s ]</font><font color=#0000ff>[ %s ]</font></html>", levelOnePick, levelThreePick, levelSevenPick);
     }
 
     public String getMiddleLineString() {
-        return String.format("[ %s ]", levelTenPick);
+        return String.format("<html><font color=#ffff00>[ %s ]</font>", levelTenPick);
     }
 
     public String getBottomLineString() {
-        return String.format("[ %s ][ %s ][ %s ]", levelThirteenPick, levelSixteenPick, levelTwentyPick);
+        return String.format("<html><font color=#0000ff>[ %s ]</font><font color=#00ff00>[ %s ]</font><font color=#ff0000>[ %s ]</font></html>", levelThirteenPick, levelSixteenPick, levelTwentyPick);
     }
 }

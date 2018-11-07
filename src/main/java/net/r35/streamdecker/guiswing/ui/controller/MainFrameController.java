@@ -109,6 +109,7 @@ public class MainFrameController {
             System.out.println(String.format("--> [SELECTED-BUILD] %s", newSelection));
 
             if (newSelection == null) {
+                mainFrame.resetCurrentBuildLines();
                 return;
             }
 
